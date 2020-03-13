@@ -52,8 +52,8 @@ let digits a =
         |_->1
     inner a
 
-let minmax _ =
-    failwith "Not implemented"
+let minmax a =
+     
 
 let isLeap _ =
     failwith "Not implemented"
