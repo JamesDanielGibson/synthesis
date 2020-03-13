@@ -46,10 +46,10 @@ let toTime t =
     |_-> h,m,s
 
 let digits a =
-    let rec inner b count = 
-        match b/10>0 with
-        |true -> inner (b/10) (count+1)
-        |_->count
+    let rec inner (b:int)  = 
+        match b<10 && b> -10 with
+        |false -> 1+inner (b/10) 
+        |_->1
     inner a
 
 let minmax _ =
